@@ -10,3 +10,11 @@ Use CSS to create a clean, responsive dashboard with card-like sections for weat
 
 3. JavaScript for Real-Time Data Fetching and Aggregation
 Use the OpenWeatherMap API to fetch data and process it in real-time. Aggregate weather data and update the dashboard at regular intervals.
+Data Ingestion:
+
+Use APIs (like OpenWeatherMap) to fetch live weather data at intervals.
+Stream data using Apache Kafka or AWS Kinesis.
+Data Processing & Aggregation:
+
+Transform raw data and calculate real-time metrics such as average temperature and humidity.
+Roll up data into 5-minute, hourly, and daily summaries to manage storage and access.
