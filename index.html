@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Monitor</h1>
+        <div class="search-box">
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off" />
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div class="temperature-unit">
+            <label>
+                <input type="radio" name="unit" value="Celsius" checked onchange="setTemperatureUnit()"> Celsius
+            </label>
+            <label>
+                <input type="radio" name="unit" value="Fahrenheit" onchange="setTemperatureUnit()"> Fahrenheit
+            </label>
+        </div>
+
+        <div id="weatherInfo" class="weather-info"></div>
+        <div id="dailySummaries" class="daily-summaries"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
